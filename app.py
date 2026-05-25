@@ -70,7 +70,8 @@ def render_info_page(current_key):
     st.write("")
 
     for line in page.get("content", []):
-        st.info(line or " ")
+        if line.strip():
+            st.info(line)
 
     st.write("")
     if st.button("了解了，開始評估我的節稅方案 →", use_container_width=True):
