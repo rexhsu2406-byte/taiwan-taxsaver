@@ -134,13 +134,13 @@ RESULT_MAP = {
     "RESULT_B3_FAMILY":   ["family_company", "family_salary"],
     "RESULT_B3_INHERIT":  ["family_company", "trust_business", "gift_plan"],
     "RESULT_C1_HOLD":     ["unrealized_gain", "stock_pledge"],
-    "RESULT_C1_SELL":     ["unrealized_gain", "art_investment", "charity_donate"],
-    "RESULT_C1_INHERIT":  ["gift_plan", "trust_wealth", "charity_donate"],
+    "RESULT_C1_SELL":     ["unrealized_gain", "art_investment"],
+    "RESULT_C1_INHERIT":  ["gift_plan", "trust_wealth"],
     "RESULT_C2_RENT":     ["rental_expense", "rental_tax_optimize"],
     "RESULT_C2_SELL":     ["land_value_tax", "gift_plan"],
     "RESULT_C2_INHERIT":  ["gift_plan", "trust_wealth", "land_value_tax"],
     "RESULT_C3_INVEST":   ["art_investment", "unrealized_gain", "stock_pledge"],
-    "RESULT_C3_INHERIT":  ["trust_wealth", "gift_plan", "charity_donate"],
+    "RESULT_C3_INHERIT":  ["trust_wealth", "gift_plan"],
 }
 
 def get_next_question(current_q, answer):
