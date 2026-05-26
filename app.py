@@ -21,7 +21,7 @@ TAG_COLORS = {
 
 def init_state():
     if "current_key" not in st.session_state:
-        st.session_state["current_key"] = "Q1"
+        st.session_state["current_key"] = "TAX_INTRO"
     if "history" not in st.session_state:
         st.session_state["history"] = []
 
@@ -161,7 +161,7 @@ def render_result_page(current_key):
     st.write("")
     if st.button("重新評估 🔄", use_container_width=True):
         st.session_state.clear()
-        st.session_state["current_key"] = "Q1"
+        st.session_state["current_key"] = "TAX_INTRO"
         st.session_state["history"] = []
         st.rerun()
 
